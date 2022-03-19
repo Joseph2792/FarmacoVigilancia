@@ -24,7 +24,22 @@ html {
 }
 
 body{
-    color: $color-principal;
+    color: $color-principal;    
+    width: 100%;
+
+    @media screen and (min-width: 1024px){     
+        font-size: 1.2rem;
+    }
+
+    @media screen and (min-width: 1366px){
+        width: 80%;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 1900px){     
+        width: 70%;
+    }
 }
 
 ul li{

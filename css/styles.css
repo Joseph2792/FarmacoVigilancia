@@ -19,6 +19,24 @@ html {
 
 body {
   color: #003057;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  body {
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1900px) {
+  body {
+    width: 70%;
+  }
 }
 
 ul li {
@@ -38,6 +56,11 @@ ul li {
   font-weight: 500;
   transition: ease-in;
 }
+@media screen and (min-width: 1024px) {
+  .navbar-Everex .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+}
 .navbar-Everex .navbar-nav .nav-item .nav-link:hover,
 .navbar-Everex .navbar-nav .nav-item .nav-link.active {
   font-weight: bold;
@@ -54,6 +77,173 @@ ul li {
 @media screen and (min-width: 1366px) {
   .navbar-Everex .container-logo > img {
     height: 60px;
+  }
+}
+
+.header-farmacoVigilancia {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+}
+@media screen and (min-width: 1024px) {
+  .header-farmacoVigilancia {
+    justify-content: start;
+    margin: 50px 0px;
+  }
+}
+.header-farmacoVigilancia > img {
+  height: 80px;
+  width: auto;
+}
+@media screen and (min-width: 1024px) {
+  .header-farmacoVigilancia > img {
+    height: 120px;
+  }
+}
+.header-farmacoVigilancia > .cont-headerSeccion {
+  margin-left: -2px;
+}
+@media screen and (min-width: 1024px) {
+  .header-farmacoVigilancia > .cont-headerSeccion {
+    width: calc(100% - 170px);
+  }
+}
+.header-farmacoVigilancia > .cont-headerSeccion h1 {
+  font-style: italic;
+  font-weight: 300;
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+.header-farmacoVigilancia > .cont-headerSeccion h2 {
+  font-weight: 600;
+  border-top: 2px solid #F7941D;
+  padding-left: 20px;
+}
+
+.seccion-1 {
+  grid-area: articulo-1;
+}
+
+.seccion-2 {
+  grid-area: articulo-2;
+}
+
+.seccion-3 {
+  grid-area: articulo-3;
+}
+
+.seccion-4 {
+  grid-area: articulo-4;
+}
+
+.seccion-5 {
+  grid-area: articulo-5;
+}
+
+.seccion-6 {
+  grid-area: articulo-6;
+}
+
+.seccion-7 {
+  grid-area: articulo-7;
+}
+
+.seccion-8 {
+  grid-area: articulo-8;
+}
+
+.seccion-9 {
+  grid-area: articulo-9;
+}
+
+.seccion-farmacoVigilancia {
+  background-color: #003057;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "articulo-1 articulo-1" "articulo-2 articulo-3" "articulo-4 articulo-4" "articulo-5 articulo-5" "articulo-6 articulo-6" "articulo-7 articulo-7" "articulo-8 articulo-8" "articulo-9 articulo-9";
+  padding: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .seccion-farmacoVigilancia {
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-areas: "articulo-1 articulo-1 articulo-2" "articulo-3 articulo-4 articulo-4" "articulo-3 articulo-5 articulo-6" "articulo-7 articulo-7 articulo-6" "articulo-8 articulo-8 articulo-9";
+  }
+}
+
+.cont-articuloConbordes {
+  border-left: 10px solid #F7941D;
+  padding: 20px;
+  background-color: #fff;
+}
+.cont-articuloConbordes h2 {
+  border-bottom: 1px solid #F7941D;
+  padding-left: 20px;
+  display: inline;
+  margin-left: -20px;
+  font-weight: bold;
+}
+.cont-articuloConbordes > ul {
+  margin-top: 20px;
+}
+.cont-articuloConbordes > ul > li {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bg-imagen-articulo {
+  background-image: url("/assets/svg/iconMira.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100px;
+}
+
+.cont-articulo-primario .encabezado-articulo {
+  padding: 20px;
+  background-color: #F7941D;
+  color: #fff;
+}
+.cont-articulo-primario .body-articulo {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.cont-articulo-secundario .encabezado-articulo {
+  padding: 20px;
+  background-color: #fff;
+  color: #F7941D;
+}
+.cont-articulo-secundario .body-articulo {
+  padding: 20px;
+  background-color: #F7941D;
+  color: #fff;
+}
+
+.border-articulo-img {
+  border-top: 10px solid #F7941D;
+  border-bottom: 10px solid #F7941D;
+}
+@media screen and (min-width: 1024px) {
+  .border-articulo-img {
+    margin-top: -50%;
+  }
+}
+.border-articulo-img > img {
+  width: 100%;
+}
+.articulo-img > img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .articulo-img > img {
+    max-height: 600px;
+    width: auto;
   }
 }
 

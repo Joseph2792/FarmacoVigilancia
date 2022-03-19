@@ -1,2 +1,175 @@
 @import "variables";
 
+.header-farmacoVigilancia{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 30px 0px;
+
+    @media screen and (min-width:1024px) {
+        justify-content: start;
+        margin: 50px 0px;
+    }
+
+    > img{
+        height: 80px;
+        width: auto;
+
+        @media screen and (min-width: 1024px) {
+            height: 120px;  
+        }
+    }
+
+    > .cont-headerSeccion{        
+        margin-left: -2px;
+
+        @media screen and (min-width: 1024px) {            
+            width: calc(100% - 170px);
+        }
+
+        h1{
+            font-style: italic;
+            font-weight: 300;
+            padding-left: 20px;
+            margin-bottom: 0px;            
+        }
+
+        h2{
+            font-weight: 600;
+            border-top: 2px solid $color-secundario;
+            padding-left: 20px;
+        }
+    }
+}
+
+@for $i from 1 through 9 {
+    .seccion-#{$i} {        
+        grid-area: articulo-#{$i};        
+    }    
+}
+
+.seccion-farmacoVigilancia{
+    background-color: $color-principal;
+
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "articulo-1 articulo-1"
+        "articulo-2 articulo-3"        
+        "articulo-4 articulo-4"
+        "articulo-5 articulo-5"
+        "articulo-6 articulo-6"
+        "articulo-7 articulo-7"
+        "articulo-8 articulo-8"
+        "articulo-9 articulo-9";
+
+    padding: 20px;
+
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: 0.5fr 1fr 1fr;
+
+        grid-template-areas: 
+        "articulo-1 articulo-1 articulo-2"
+        "articulo-3 articulo-4 articulo-4"
+        "articulo-3 articulo-5 articulo-6"
+        "articulo-7 articulo-7 articulo-6"
+        "articulo-8 articulo-8 articulo-9";
+
+    }
+}
+
+.cont-articuloConbordes{
+    border-left: 10px solid $color-secundario;
+    padding: 20px;
+    background-color: $color-blanco;
+
+    h2{
+        border-bottom: 1px solid $color-secundario;
+        padding-left: 20px;
+        display: inline;
+        margin-left: -20px;
+        font-weight: bold;
+    }
+
+    > ul{
+        margin-top: 20px;
+
+        >li{
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.bg-imagen-articulo{
+    background-image: url("/assets/svg/iconMira.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+}
+
+.cont-articulo-primario{
+    .encabezado-articulo{
+        padding: 20px;
+        background-color: $color-secundario;
+        color: $color-blanco;
+    }
+
+    .body-articulo{
+        padding: 20px;
+        background-color: $color-blanco;
+    }
+}
+
+.cont-articulo-secundario{
+    .encabezado-articulo{
+        padding: 20px;
+        background-color: $color-blanco;
+        color: $color-secundario;
+    }
+
+    .body-articulo{
+        padding: 20px;
+        background-color: $color-secundario;
+        color: $color-blanco;
+    }
+}
+
+.border-articulo-img{
+    border-top: 10px solid $color-secundario;
+    border-bottom: 10px solid $color-secundario;
+
+    @media screen and (min-width: 1024px) {
+        //width: 450px;
+        margin-top: -50%;    
+    }
+
+    > img{
+        width: 100%;
+
+        @media screen and (min-width: 1024px) {
+            //height: 540px;            
+        }
+    }
+}
+
+.articulo-img{
+
+    > img{
+        width: 100%;
+        height: 100%;
+
+        @media screen and (min-width: 1024px) {
+            
+            max-height: 600px;
+            width: auto;
+        }
+    }
+}
