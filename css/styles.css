@@ -1,3 +1,60 @@
+@charset "UTF-8";
+@font-face {
+  font-family: ‘Roboto-Regular’;
+  src: url("/assets/fonts/Roboto-Regular.ttf") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-principal: "Roboto-Regular";
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+body {
+  color: #003057;
+}
+
+ul li {
+  list-style: none;
+}
+
+.navbar-Everex .navbar-nav .nav-item {
+  margin: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .navbar-Everex .navbar-nav .nav-item {
+    margin: 0px 10px;
+  }
+}
+.navbar-Everex .navbar-nav .nav-item .nav-link {
+  color: #003057;
+  font-weight: 500;
+  transition: ease-in;
+}
+.navbar-Everex .navbar-nav .nav-item .nav-link:hover,
+.navbar-Everex .navbar-nav .nav-item .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #F7941D;
+}
+.navbar-Everex .container-logo > img {
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-Everex .container-logo > img {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .navbar-Everex .container-logo > img {
+    height: 60px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
