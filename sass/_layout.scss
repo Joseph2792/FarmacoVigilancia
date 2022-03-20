@@ -32,7 +32,11 @@ body{
         font-size: 1.2rem;
     }
 
-    @media screen and (min-width: 1366px){
+    @media screen and (min-width: 1366px){                
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 1400px){
         width: 80%;
         margin: auto;
         font-size: 1.5rem;
@@ -45,4 +49,8 @@ body{
 
 ul li{
     list-style: none;
+}
+
+.clearfloats{ 
+    clear:both;
 }
