@@ -66,22 +66,13 @@
     padding: 20px;
 
     @media screen and (min-width: 1024px) {
-        grid-template-columns: 0.5fr 1fr 1fr;
-
-        /*grid-template-areas: 
-        "articulo-1 articulo-1 articulo-2"
-        "articulo-3 articulo-4 articulo-4"
-        "articulo-3 articulo-5 articulo-6"
-        "articulo-7 articulo-7 articulo-6"
-        "articulo-8 articulo-8 articulo-9";*/
-
+        grid-template-columns: 0.5fr 1fr 1fr;        
         grid-template-areas: 
         "articulo-1 articulo-1 articulo-2"
         "articulo-3 articulo-4 articulo-4"
         "articulo-3 articulo-5 articulo-6"
         "articulo-7 articulo-7 articulo-6"
         "articulo-8 articulo-8 articulo-6";
-
     }
 }
 
@@ -89,9 +80,6 @@
     .seccion-#{$i} {        
         grid-area: articulo-#{$i};
     }    
-}
-.seccion-6y9{
-    grid-area: articulo-6y9;
 }
 
 .cont-articuloConbordes{
@@ -118,12 +106,12 @@
                 width: 44px;
                 margin-left: -20px;
             }
-            >span{
+            
+            > span{
                 font-size: 0.8rem;
                 font-weight: bold;
                 margin-left: 20px;
             }
-
         }                  
     }
 }

@@ -153,12 +153,6 @@ ul li {
 @media screen and (min-width: 1024px) {
   .seccion-farmacoVigilancia {
     grid-template-columns: 0.5fr 1fr 1fr;
-    /*grid-template-areas: 
-    "articulo-1 articulo-1 articulo-2"
-    "articulo-3 articulo-4 articulo-4"
-    "articulo-3 articulo-5 articulo-6"
-    "articulo-7 articulo-7 articulo-6"
-    "articulo-8 articulo-8 articulo-9";*/
     grid-template-areas: "articulo-1 articulo-1 articulo-2" "articulo-3 articulo-4 articulo-4" "articulo-3 articulo-5 articulo-6" "articulo-7 articulo-7 articulo-6" "articulo-8 articulo-8 articulo-6";
   }
 }
@@ -197,10 +191,6 @@ ul li {
 
 .seccion-9 {
   grid-area: articulo-9;
-}
-
-.seccion-6y9 {
-  grid-area: articulo-6y9;
 }
 
 .cont-articuloConbordes {
