@@ -45,12 +45,6 @@
     }
 }
 
-@for $i from 1 through 9 {
-    .seccion-#{$i} {        
-        grid-area: articulo-#{$i};        
-    }    
-}
-
 .seccion-farmacoVigilancia{
     background-color: $color-principal;
 
@@ -74,14 +68,30 @@
     @media screen and (min-width: 1024px) {
         grid-template-columns: 0.5fr 1fr 1fr;
 
+        /*grid-template-areas: 
+        "articulo-1 articulo-1 articulo-2"
+        "articulo-3 articulo-4 articulo-4"
+        "articulo-3 articulo-5 articulo-6"
+        "articulo-7 articulo-7 articulo-6"
+        "articulo-8 articulo-8 articulo-9";*/
+
         grid-template-areas: 
         "articulo-1 articulo-1 articulo-2"
         "articulo-3 articulo-4 articulo-4"
         "articulo-3 articulo-5 articulo-6"
         "articulo-7 articulo-7 articulo-6"
-        "articulo-8 articulo-8 articulo-9";
+        "articulo-8 articulo-8 articulo-6";
 
     }
+}
+
+@for $i from 1 through 9 {
+    .seccion-#{$i} {        
+        grid-area: articulo-#{$i};
+    }    
+}
+.seccion-6y9{
+    grid-area: articulo-6y9;
 }
 
 .cont-articuloConbordes{
@@ -101,7 +111,8 @@
         margin-top: 20px;
 
         >li{
-            font-size: 12px;
+            //font-size: 1.2rem;
+            font-size: 0.8rem;
             font-weight: bold;
             margin-bottom: 5px;
         }

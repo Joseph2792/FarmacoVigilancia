@@ -43,10 +43,19 @@ ul li {
   list-style: none;
 }
 
+.navbar-toggler {
+  margin-right: 15px;
+}
+
 .navbar-Everex .navbar-nav .nav-item {
   margin: 0px;
 }
 @media screen and (min-width: 1024px) {
+  .navbar-Everex .navbar-nav .nav-item {
+    margin: 0px 5px;
+  }
+}
+@media screen and (min-width: 1366px) {
   .navbar-Everex .navbar-nav .nav-item {
     margin: 0px 10px;
   }
@@ -123,6 +132,28 @@ ul li {
   padding-left: 20px;
 }
 
+.seccion-farmacoVigilancia {
+  background-color: #003057;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "articulo-1 articulo-1" "articulo-2 articulo-3" "articulo-4 articulo-4" "articulo-5 articulo-5" "articulo-6 articulo-6" "articulo-7 articulo-7" "articulo-8 articulo-8" "articulo-9 articulo-9";
+  padding: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .seccion-farmacoVigilancia {
+    grid-template-columns: 0.5fr 1fr 1fr;
+    /*grid-template-areas: 
+    "articulo-1 articulo-1 articulo-2"
+    "articulo-3 articulo-4 articulo-4"
+    "articulo-3 articulo-5 articulo-6"
+    "articulo-7 articulo-7 articulo-6"
+    "articulo-8 articulo-8 articulo-9";*/
+    grid-template-areas: "articulo-1 articulo-1 articulo-2" "articulo-3 articulo-4 articulo-4" "articulo-3 articulo-5 articulo-6" "articulo-7 articulo-7 articulo-6" "articulo-8 articulo-8 articulo-6";
+  }
+}
+
 .seccion-1 {
   grid-area: articulo-1;
 }
@@ -159,20 +190,8 @@ ul li {
   grid-area: articulo-9;
 }
 
-.seccion-farmacoVigilancia {
-  background-color: #003057;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "articulo-1 articulo-1" "articulo-2 articulo-3" "articulo-4 articulo-4" "articulo-5 articulo-5" "articulo-6 articulo-6" "articulo-7 articulo-7" "articulo-8 articulo-8" "articulo-9 articulo-9";
-  padding: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .seccion-farmacoVigilancia {
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-areas: "articulo-1 articulo-1 articulo-2" "articulo-3 articulo-4 articulo-4" "articulo-3 articulo-5 articulo-6" "articulo-7 articulo-7 articulo-6" "articulo-8 articulo-8 articulo-9";
-  }
+.seccion-6y9 {
+  grid-area: articulo-6y9;
 }
 
 .cont-articuloConbordes {
@@ -191,7 +210,7 @@ ul li {
   margin-top: 20px;
 }
 .cont-articuloConbordes > ul > li {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
