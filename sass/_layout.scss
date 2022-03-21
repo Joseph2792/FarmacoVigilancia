@@ -12,10 +12,6 @@
       font-style: normal;
 }
 
-:root {
-    --font-principal: 'Roboto-Regular';    
-}
-
 * {
     box-sizing: border-box;
 }
@@ -39,7 +35,6 @@ body{
     @media screen and (min-width: 1400px){
         width: 80%;
         margin: auto;
-        font-size: 1.5rem;
     }
 
     @media screen and (min-width: 1900px){     

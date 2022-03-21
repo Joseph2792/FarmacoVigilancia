@@ -49,3 +49,37 @@
         }
     }
 }
+
+.navbar-light .navbar-toggler {
+    border-color: $color-principal;
+
+    &:focus{
+        border-color: $color-principal;
+        box-shadow: 0px 0px 0px rgba($color-principal, 0.5);
+    }
+}
+
+.navbar-collapse.show{
+    background-color: $color-principal;
+    z-index: 9999;
+    position: absolute;
+    top: 66px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 12px 12px rgba(0,0,0, 0.5);
+
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: $color-blanco;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .nav-link:hover,
+            .nav-link.active{
+                background-color: $color-secundario;
+            }
+        }
+    }
+}
